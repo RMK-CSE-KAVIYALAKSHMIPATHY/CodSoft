@@ -1,0 +1,42 @@
+def add(A, B):
+    return A + B
+
+def subtract(A, B):
+    return A - B
+
+def multiply(A, B):
+    return A * B
+
+def divide(A, B):
+    if y != 0:
+        return A / B
+    else:
+        return "Error: Division by zero"
+
+print("Simple Calculator")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (1/2/3/4): ")
+
+
+if operation == '1':
+    result = add(num1, num2)
+    print(f"{num1} + {num2} = {result}")
+elif operation == '2':
+    result = subtract(num1, num2)
+    print(f"{num1} - {num2} = {result}")
+elif operation == '3':
+    result = multiply(num1, num2)
+    print(f"{num1} * {num2} = {result}")
+elif operation == '4':
+    result = divide(num1, num2)
+    print(f"{num1} / {num2} = {result}")
+else:
+    print("Invalid operation")
+
